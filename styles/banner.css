@@ -1,23 +1,21 @@
-.banner{
-   background: var(--azul-degrade);
-   color: var(--branco);
-   text-align: center;
-   padding: 2.5em 2em;
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
 }
 
-.banner__titulo{
+.banner__titulo {
     font-size: 18px;
     font-weight: 700;
-    font-family: 'poppins', sans-serif;
 }
 
-.banner__texto{
+.banner__texto {
     font-weight: 500;
     margin: 1em 0;
-    font-family: 'poppins', sans-serif;
 }
 
-.banner__pesquisa{
+.banner__pesquisa {
     background-color: transparent;
     border: 1px solid var(--branco);
     color: var(--branco);
@@ -26,24 +24,40 @@
     width: 100%;
 }
 
-.banner__pesquisa::placeholder{
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     color: var(--branco);
-    font-family: 'poppins', sans-serif;
-    background: url("../imagens/mobile/lupa.svg") no-repeat;
+    background: url("../img/Lupa.svg") no-repeat;
     background-position: 1em;
 }
 
 @media screen and (min-width: 1024px) {
-    .banner__titulo{
+    .banner__titulo {
         font-size: 36px;
     }
-    .banner__pesquisa{
+
+    .banner__pesquisa {
         width: 50%;
     }
-    .banner__pesquisa::placeholder{
-        background-position: 6em;
+
+    .banner__pesquisa::placeholder {
+        background-position: 7em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__pesquisa {
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 12em;
+    }
+
+    .banner {
+        padding: 6em 0;
     }
 }
